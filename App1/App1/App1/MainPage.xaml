@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:input="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+			 mc:Ignorable="d"
+			 x:Class="App1.MainPage">
+
+	<Grid Margin="10">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="30"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+
+		<StackLayout>
+			<input:RadSegmentedControl SelectedIndex="0">
+				<input:RadSegmentedControl.ItemsSource>
+					<x:Array Type="{x:Type x:String}">
+						<x:String>Popular</x:String>
+						<x:String>Library</x:String>
+						<x:String>Playlists</x:String>
+						<x:String>Friends</x:String>
+					</x:Array>
+				</input:RadSegmentedControl.ItemsSource>
+			</input:RadSegmentedControl>
+		</StackLayout>
+
+		<ScrollView Grid.Row="2">
+			<StackLayout>
+				<input:RadSegmentedControl SelectedIndex="0">
+					<input:RadSegmentedControl.ItemsSource>
+						<x:Array Type="{x:Type x:String}">
+							<x:String>Popular</x:String>
+							<x:String>Library</x:String>
+							<x:String>Playlists</x:String>
+							<x:String>Friends</x:String>
+						</x:Array>
+					</input:RadSegmentedControl.ItemsSource>
+				</input:RadSegmentedControl>
+			</StackLayout>
+		</ScrollView>
+	</Grid>
+
+</ContentPage>
